@@ -6,19 +6,26 @@
     <script src="app.js"></script>
   </head>
   <body ng-app="logintrest" class="container">
-    <h1>Hello Logintest</h1>
+    <h1>Hello Logintrest</h1>
     <div class="row">
       <form name="loginForm" role="form" class="well col-md-6">
         <div class="form-group">
           <label for="username">User:</label>
-          <input name="username" type="text" class="form-control">
+          <input ng-model="username" name="username" type="text" class="form-control">
         </div>
         <div class="form-group">
           <label for="password">Password:</label>
-          <input name="password" type="password" class="form-control">
+          <input ng-model="password" name="password" type="password" class="form-control">
         </div>
         <button class="btn btn-default" type="submit">log in</button>
       </form>
+      <div class="col-md-6">
+        <div>
+          Username: {{ username }}
+        </div>        <div>
+          Password: {{ password }}
+        </div>
+      </div>
 
     </div>
 
