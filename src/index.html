@@ -22,7 +22,9 @@
       <div class="col-md-6">
         <h4>Logged in users</h4>
         <ul class="list-group">
-          <li ng-repeat="(key, user) in vm.logins" class="list-group-item">{{ user.username }}</li>
+          <li ng-repeat="(key, user) in vm.logins" class="list-group-item">
+            {{ user.username }}, {{ user.time }}
+          </li>
         </ul>
       </div>
 
