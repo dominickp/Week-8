@@ -23,7 +23,7 @@
         <h4>Logged in users</h4>
         <ul class="list-group">
           <li ng-repeat="(key, user) in vm.logins" class="list-group-item">
-            {{ user.username }}, {{ user.time }}
+            {{ user.username }}, {{ user.time }} <button ng-click="vm.logout(key)" class="btn btn-danger btn-xs pull-right">&times;</button>
           </li>
         </ul>
       </div>

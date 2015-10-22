@@ -18,6 +18,13 @@ angular.module('logintrest', [])
         vm.username = "";
         vm.password = "";
       };
+
+      vm.logout = function(key){
+        console.log(key);
+        vm.logins.splice(key, 1);
+        console.log(vm.logins);
+      };
+
     });
 
 
